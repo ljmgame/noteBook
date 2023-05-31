@@ -6,4 +6,4 @@
 ## 分类
 
 - [gitBook](gitBook/index.md)
-  - [gitBook +码云构建文档](gitBook/init/init.md)
+  - [gitBook文档创建部署](gitBook/init/init.md)
