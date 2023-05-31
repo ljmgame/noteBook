@@ -1,3 +1,3 @@
 # gitbook
 
-[gitBook +码云构建文档](./init/init.md)
+[gitBook文档创建部署](./init/init.md)
