@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../../unity/" />
+    
     
     <link rel="prev" href="../" />
     
@@ -129,6 +131,51 @@
             
                     
                     gitBook文档创建部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../unity/">
+            
+                <a href="../../unity/">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../unity/lua/lua.html">
+            
+                <a href="../../unity/lua/lua.html">
+            
+                    
+                    lua编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../unity/resExport/resExport.html">
+            
+                <a href="../../unity/resExport/resExport.html">
+            
+                    
+                    资源导出
             
                 </a>
             
@@ -298,8 +345,14 @@ gitbook init
 <li>&#x5BF9;&#x975E;&#x7A0B;&#x5E8F;&#x5458;&#x6709;&#x95E8;&#x69DB;</li>
 </ul>
 </li>
+<li><strong>&#x76EE;&#x7684;</strong><ul>
+<li>&#x4EBA;&#x7684;&#x7CBE;&#x529B;&#x90FD;&#x662F;&#x6709;&#x9650;&#x7684;&#xFF0C;&#x5B66;&#x8FC7;&#x4E00;&#x6B21;&#x7684;&#x4E1C;&#x897F;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x4ECE;&#x5934;&#x518D;&#x6765;&#x3002;</li>
+<li>&#x642D;&#x5EFA;&#x8D77;&#x81EA;&#x5DF1;&#x7684;&#x77E5;&#x8BC6;&#x7BA1;&#x7406;&#x5E73;&#x53F0;&#x3001;&#x8BB0;&#x5F55;&#x6280;&#x672F;&#x3001;&#x603B;&#x7ED3;&#x3001;&#x65B9;&#x6CD5;&#x8BBA;&#x3001;&#x7B14;&#x8BB0;&#x7B49;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x4FE1;&#x606F;&#x3001;&#x79EF;&#x7D2F;&#x81EA;&#x8EAB;</li>
+<li>&#x968F;&#x65F6;&#x968F;&#x5730;&#x901A;&#x8FC7;&#x7F51;&#x9875;&#x6765;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x3001;&#x6781;&#x5927;&#x5730;&#x8282;&#x7701;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x7684;&#x65F6;&#x95F4;<h2 id="3-&#x7801;&#x4E91;&#x90E8;&#x7F72;&#x6258;&#x7BA1;">3. &#x7801;&#x4E91;&#x90E8;&#x7F72;&#x6258;&#x7BA1;</h2>
+</li>
 </ul>
-<h2 id="3-&#x7801;&#x4E91;&#x90E8;&#x7F72;&#x6258;&#x7BA1;">3. &#x7801;&#x4E91;&#x90E8;&#x7F72;&#x6258;&#x7BA1;</h2>
+</li>
+</ul>
 <h3 id="31-&#x4E3A;&#x4EC0;&#x4E48;&#x7528;&#x7801;&#x4E91;&#x90E8;&#x7F72;&#x6258;&#x7BA1;">3.1. &#x4E3A;&#x4EC0;&#x4E48;&#x7528;&#x7801;&#x4E91;&#x90E8;&#x7F72;&#x6258;&#x7BA1;</h3>
 <ul>
 <li><p><strong>&#x53C2;&#x8003;&#x94FE;&#x63A5;</strong></p>
@@ -416,6 +469,13 @@ git branch -a # &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
 </li>
 </ul>
 <h3 id="45-&#x66F4;&#x65B0;&#x6587;&#x6863;">4.5 &#x66F4;&#x65B0;&#x6587;&#x6863;</h3>
+<ul>
+<li><strong>&#x66F4;&#x65B0;</strong></li>
+<li><strong><code>master</code> &#x63D0;&#x4EA4;&#x6E90;&#x7801;&#x6B63;&#x5E38;&#x6D41;&#x7A0B;&#x3001;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x5FFD;&#x7565; <code>_book</code>&#x6587;&#x4EF6;</strong></li>
+<li><strong>&#x7136;&#x540E;&#x63D0;&#x4EA4;&#x9759;&#x6001;&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x5230; <code>gh_pages</code> &#x5206;&#x652F;&#x4E0A;</strong><pre><code># git
+git subtree push --prefix=_book origin gh_pages # &#x66F4;&#x65B0;&#x9759;&#x6001;&#x90E8;&#x7F72;
+</code></pre></li>
+</ul>
 
                                 
                                 </section>
@@ -443,10 +503,14 @@ git branch -a # &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
 
             
                 
-                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: gitBook">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: gitBook">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../../unity/" class="navigation navigation-next " aria-label="Next page: unity">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -455,7 +519,7 @@ git branch -a # &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"gitBook文档创建部署","level":"2.1.1","depth":2,"previous":{"title":"gitBook","level":"2.1","depth":1,"path":"gitBook/index.md","ref":"gitBook/index.md","articles":[{"title":"gitBook文档创建部署","level":"2.1.1","depth":2,"path":"gitBook/init/init.md","ref":"gitBook/init/init.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"gitBook/init/init.md","mtime":"2023-05-31T08:08:08.791Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-31T08:25:02.714Z"},"basePath":"../..","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"title":"gitBook文档创建部署","level":"2.1.1","depth":2,"next":{"title":"unity","level":"2.2","depth":1,"path":"unity/index.md","ref":"unity/index.md","articles":[{"title":"lua编程","level":"2.2.1","depth":2,"path":"unity/lua/lua.md","ref":"unity/lua/lua.md","articles":[]},{"title":"资源导出","level":"2.2.2","depth":2,"path":"unity/resExport/resExport.md","ref":"unity/resExport/resExport.md","articles":[]}]},"previous":{"title":"gitBook","level":"2.1","depth":1,"path":"gitBook/index.md","ref":"gitBook/index.md","articles":[{"title":"gitBook文档创建部署","level":"2.1.1","depth":2,"path":"gitBook/init/init.md","ref":"gitBook/init/init.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"gitBook/init/init.md","mtime":"2023-05-31T09:21:41.123Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T09:03:22.503Z"},"basePath":"../..","book":{"language":"zh"}});
         });
     </script>
 </div>
@@ -463,6 +527,10 @@ git branch -a # &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
         
     <script src="../../gitbook.js"></script>
     <script src="../../theme.js"></script>
+    
+        
+        <script src="../../gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../../gitbook-plugin-search/search-engine.js"></script>

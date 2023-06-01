@@ -7,3 +7,7 @@
 
 - [gitBook](gitBook/index.md)
   - [gitBook文档创建部署](gitBook/init/init.md)
+
+- [unity](unity/index.md)
+  - [lua编程](unity/lua/lua.md)
+  - [资源导出](unity/resExport/resExport.md)
