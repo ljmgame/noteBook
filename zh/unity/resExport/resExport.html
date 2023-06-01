@@ -1,0 +1,334 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>资源导出 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../lua/lua.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">大纲</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">分类</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../gitBook/">
+            
+                <a href="../../gitBook/">
+            
+                    
+                    gitBook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../gitBook/init/init.html">
+            
+                <a href="../../gitBook/init/init.html">
+            
+                    
+                    gitBook文档创建部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../lua/lua.html">
+            
+                <a href="../lua/lua.html">
+            
+                    
+                    lua编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.2" data-path="resExport.html">
+            
+                <a href="resExport.html">
+            
+                    
+                    资源导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >资源导出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8D44;&#x6E90;&#x5BFC;&#x51FA;">&#x8D44;&#x6E90;&#x5BFC;&#x51FA;</h1>
+<h2 id="1-&#x5B57;&#x56FE;&#x8D44;&#x6E90;&#x5BFC;&#x51FA;">1. &#x5B57;&#x56FE;&#x8D44;&#x6E90;&#x5BFC;&#x51FA;</h2>
+<ul>
+<li><p><code>SpriteExportTexture.cs</code> &#x811A;&#x672C;&#x653E;&#x7F6E;&#x5728; <code>Unity</code> &#x5DE5;&#x7A0B;&#x7684; <code>Assets\Editor</code> &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002;&#x6253;&#x5F00;&#x5DE5;&#x7A0B; <code>tools</code> &#x4E0B;&#x9762;&#x4F1A;&#x591A;&#x51FA; <code>&#x5BFC;&#x51FA;&#x7CBE;&#x7075;</code> &#x9879;</p>
+</li>
+<li><p>&#x9009;&#x62E9;&#x8981;&#x5BFC;&#x51FA;&#x7684;&#x5B57;&#x56FE;&#x8D44;&#x6E90;&#xFF0C;<code>Read/Write Enabled</code> &#x52FE;&#x9009;&#x5E76;&#x70B9;&#x51FB; <code>Apply</code> &#x5E94;&#x7528;</p>
+<ul>
+<li><img src="../img/resExport/1.png" alt="&#x56FE;&#x89E3;"></li>
+</ul>
+</li>
+<li><p>&#x7F16;&#x8F91;&#x5668; <code>tools</code> -&gt; <code>&#x5BFC;&#x51FA;&#x7CBE;&#x7075;</code> &#x5BFC;&#x51FA;&#xFF0C;&#x5BFC;&#x51FA;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#x5728; <code>Assets\OutSprite</code> &#x4E0B;&#xFF08;&#x53EF;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x811A;&#x672C;&#x6539;&#x53D8;&#x5BFC;&#x51FA;&#x8DEF;&#x5F84;&#x7B49;&#xFF09;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5BFC;&#x51FA;&#x5931;&#x8D25;&#x6216;&#x8005;&#x53EA;&#x5BFC;&#x51FA;&#x4E00;&#x5F20;&#x4E0D;&#x53EF;&#x67E5;&#x770B;&#x7684;&#x56FE;&#x3002;&#x68C0;&#x67E5;&#x4E0B;&#x5B57;&#x56FE; <code>Inspector</code> &#x7684; <code>Default</code> &#x7684; <code>Format</code> &#x9009;&#x9879;&#x3002;&#x6539;&#x6210; <code>RGBA 32 bit</code>&#xFF08;&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x811A;&#x672C;&#xFF0C;&#x5728;&#x811A;&#x672C;&#x91CC;&#x7EDF;&#x4E00;&#x6539;&#xFF09;</p>
+<ul>
+<li>&#x4F8B;&#x5982;</li>
+<li><img src="../img/resExport/2.png" alt="&#x56FE;&#x89E3;"></li>
+<li>&#x4FEE;&#x6539;&#x540E;</li>
+<li><img src="../img/resExport/3.png" alt="&#x56FE;&#x89E3;"></li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../lua/lua.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: lua编程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"资源导出","level":"2.2.2","depth":2,"previous":{"title":"lua编程","level":"2.2.1","depth":2,"path":"unity/lua/lua.md","ref":"unity/lua/lua.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"unity/resExport/resExport.md","mtime":"2023-06-01T09:03:05.213Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T09:03:22.503Z"},"basePath":"../..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
