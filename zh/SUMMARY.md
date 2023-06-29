@@ -11,3 +11,6 @@
 - [unity](unity/index.md)
   - [lua编程](unity/lua/lua.md)
   - [资源导出](unity/resExport/resExport.md)
+
+- [mu](mu/index.md)
+  - [web与unity服务器通信](mu/web2unity/web2unity.md)
