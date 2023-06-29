@@ -26,6 +26,7 @@
 - 更新最新 proto 消息，mu-client/resource/net 覆盖 mu-network/resource/net
 
 - 输出脚本文件
+
 ~~~
 # 下载环境依赖
 npm install --registry=https://registry.npm.taobao.org
@@ -55,6 +56,7 @@ npm run build
 #### 4.1.2 远程下载
 
 - 修改 package.json 文件
+
 ~~~
   "devDependencies": {
     "@mu/mu-network": "^1.0.5", # 每次 network.js 更新后，这个版本应该是递增。所以是有打包publish步骤
@@ -63,6 +65,7 @@ npm run build
 ~~~
 
 - 切镜像源
+
 ~~~
 # nrm 是 npm 的镜像源管理工具，全局安装 nrm
 npm install -g nrm
@@ -82,6 +85,7 @@ npm install
 - LoginData.ts 文件新增 `unity服务器` 信息
 
 - 修改 `tools/server.js` 文件
+
 ~~~
 # unity ip, unity port, web port, log
 # 其中 web port 为自定义，因为 中转脚本 在本地运行
@@ -89,12 +93,14 @@ const server = new net.Web2UnityServer("192.168.11.54", 9200, 9700, false);
 ~~~
 
 - 修改 `MsgControl.ts` 文件 `sendLoginWeb2Unity`函数
+
 ~~~
 # ip 地址指向本机，端口与 server.js 文件的 web端口 一致即可
 Mu.network.connect('127.0.0.1', 9700, false);
 ~~~
 
 - 修改 `ConnectServerView.ts` 文件
+
 ~~~
 # 开启 web2Unity 按钮
 this.view.getChild("btn_webToUnity").visible = true;
@@ -103,6 +109,7 @@ this.view.getChild("btn_webToUnity").visible = true;
 ### 4.3 运行脚本
 
 - 运行脚本
+
 ~~~
 npm run web2unity
 ~~~
