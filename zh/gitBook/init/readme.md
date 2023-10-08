@@ -1,4 +1,4 @@
-# gitBook文档创建部署
+# 文档创建部署
   - [1. 环境](#1-环境)
     - [1.1. NodeJs](#11-nodejs)
     - [1.2. GitBook](#12-gitbook)
@@ -73,7 +73,7 @@ gitbook init
 - **`gitbook build` 命令构建 `静态网页` 而不启动本地服务器，默认生成文件存放在 `_book/` 目录**
 - **`静态网页` 主要用于 `发布准备阶段`，可打包上传服务器也可以上传 `GitHub` 等网站托管**
 
-- ![图解](../img/init_1.png)
+- ![图解](./img/init_1.png)
 
 ### 2.3. 启动项目
 
@@ -81,13 +81,13 @@ gitbook init
 - **`本地服务` 主要用于 `开发调试阶段`，能够实时预览电子书效果，且大多数开发环境搭建在本地而不是远程服务器中**
 - **本质是把 `_book/` 映射到网站的根目录**
 
-- ![图解](../img/init_2.png)
+- ![图解](./img/init_2.png)
 
 ### 2.4. 查看目录
 
 - **`tree` 命令**
 
-- ![图解](../img/init_3.png)
+- ![图解](./img/init_3.png)
 
 ### 2.5. 优缺点
 
@@ -133,11 +133,11 @@ git commit -m "初始化完成"
 ### 3.3. 新建远程仓库
 
 - 码云新建仓库
-  - ![图解](../img/init_11.png)
-  - ![图解](../img/init_12.png)
+  - ![图解](./img/init_11.png)
+  - ![图解](./img/init_12.png)
 
 - 创建完成
-  - ![图解](../img/init_13.png)
+  - ![图解](./img/init_13.png)
 
 ### 3.4. 关联本地远程仓库
 
@@ -173,11 +173,11 @@ git push origin master  # 推送本地变更到远程仓库
 ### 4.2. 新建远程仓库
 
 - `github` 新建仓库
-  - ![图解](../img/init_21.png)
-  - ![图解](../img/init_22.png)
+  - ![图解](./img/init_21.png)
+  - ![图解](./img/init_22.png)
 
 - 创建完成
-  - ![图解](../img/init_23.png)
+  - ![图解](./img/init_23.png)
 
 ### 4.3. 切换远程仓库
 
@@ -202,7 +202,7 @@ git branch -a # 可以看到远程仓库多了个 gh_pages 分支
 
 - **`Settings`** -> **`Pages`** -> **`Branch` 设置并点击 `Save` 保存** -> *文档地址：`*https://ljmgame.github.io/noteBook/`**
 - `Save` 之后需等待几分钟后访问地址
-  - ![图解](../img/init_24.png)
+  - ![图解](./img/init_24.png)
 
 ### 4.5 更新文档
 

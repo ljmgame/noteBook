@@ -5,8 +5,9 @@
 
 ## 分类
 
-- [gitBook](gitBook/index.md)
-  - [gitBook文档创建部署](gitBook/init/init.md)
+- [gitBook](gitBook/readme.md)
+  - [文档创建部署](gitBook/init/readme.md)
+  - [插件](gitBook/plugin/readme.md)
 
 - [unity](unity/index.md)
   - [lua编程](unity/lua/lua.md)
