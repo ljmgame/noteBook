@@ -1,5 +1,6 @@
 {
     "plugins": [
+        "splitter",
         "expandable-chapters-small@git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
     ]
 }

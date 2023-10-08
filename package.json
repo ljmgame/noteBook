@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "gitbook-plugin-expandable-chapters-small": "git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
+    "gitbook-plugin-expandable-chapters-small": "git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git",
+    "gitbook-plugin-splitter": "0.0.8"
   },
   "devDependencies": {},
   "scripts": {
