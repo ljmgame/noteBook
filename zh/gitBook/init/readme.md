@@ -1,5 +1,5 @@
 # 文档创建部署
-  - [1. 环境](#1-环境)
+  <!-- - [1. 环境](#1-环境)
     - [1.1. NodeJs](#11-nodejs)
     - [1.2. GitBook](#12-gitbook)
   - [2. 基本使用](#2-基本使用)
@@ -20,7 +20,7 @@
     - [4.2. 新建远程仓库](#42-新建远程仓库)
     - [4.3. 切换远程仓库](#43-切换远程仓库)
     - [4.4. 部署 GitHub Pages](#44-部署-github-pages)
-    - [4.5. 更新文档](#45-更新文档)
+    - [4.5. 更新文档](#45-更新文档) -->
 
 ## 1. 环境
 
@@ -28,31 +28,31 @@
 
 - **nodejs 环境(略)**
 ~~~
-# cmd
-nvm list # 查看已下载的 node.js 版本列表
-node -v # 查看 node.js 版本
-npm -v # 查看 npm 版本
+// cmd
+nvm list // 查看已下载的 node.js 版本列表
+node -v // 查看 node.js 版本
+npm -v // 查看 npm 版本
 ~~~
 
 ### 1.2. GitBook
 - **gitbook 命令行工具安装**
 ~~~
-# cmd
+// cmd
 npm install -g gitbook-cli
 ~~~
 
 - **查看 gitbook 版本**
 ~~~
-# cmd
-gitbook -V  # 注意 -V 为大写
-# 结果
+// cmd
+gitbook -V  // 注意 -V 为大写
+// 结果
 CLI version: 2.3.2
-GitBook version: 3.2.3  # 若出现 Installing GitBook 3.2.3 ... 且长时间无提示与结果 是因为 npm 默认国外镜像速度较慢 可考虑换源重安装
+GitBook version: 3.2.3  // 若出现 Installing GitBook 3.2.3 ... 且长时间无提示与结果 是因为 npm 默认国外镜像速度较慢 可考虑换源重安装
 ~~~
 
 - **npm 换源重安装**
 ~~~
-# cmd
+// cmd
 npm config set registry=http://registry.npm.taobao.org -g
 gitbook -V
 ~~~
@@ -64,7 +64,7 @@ gitbook -V
  - **创建项目文件夹** -> **执行命令** -> **会在当前目录自动创建 `README.md` 和 `SUMMARY.md` 两个文件**
  - **`SUMMARY.md` 是章节目录**
 ~~~
-# cmd || git
+// cmd || git
 gitbook init
 ~~~
 
@@ -123,9 +123,9 @@ gitbook init
 
 - **`git` 初始化本地仓库并提交变更**
 ~~~
-# git
-git init # 初始化仓库
-# 提交变更
+// git
+git init // 初始化仓库
+// 提交变更
 git add -A
 git commit -m "初始化完成"
 ~~~
@@ -143,9 +143,9 @@ git commit -m "初始化完成"
 
 - **`git` 本地仓库关联并推送远程仓库**
 ~~~
-# git
-git remote add origin https://gitee.com/ljmyx/note-book.git # 关联本地仓库与远程仓库
-git push origin master  # 推送本地变更到远程仓库
+// git
+git remote add origin https://gitee.com/ljmyx/note-book.git // 关联本地仓库与远程仓库
+git push origin master  // 推送本地变更到远程仓库
 ~~~
 
 ### 3.5. 部署 Gitee Pages
@@ -183,10 +183,10 @@ git push origin master  # 推送本地变更到远程仓库
 
 - **`git` 本地仓库切换远程仓库**
 ~~~
-# git
-git remote -v # 查看远程仓库地址
-git remote set-url origin https://github.com/ljmgame/noteBook.git  # 切换新远程仓库
-git remote -v # 查看是否成功
+// git
+git remote -v // 查看远程仓库地址
+git remote set-url origin https://github.com/ljmgame/noteBook.git  // 切换新远程仓库
+git remote -v // 查看是否成功
 ~~~
 
 ### 4.4. 部署 GitHub Pages
@@ -194,10 +194,10 @@ git remote -v # 查看是否成功
 - **添加 `gh_pages` 分支部署**
 - **为啥要多个 `gh_pages` 来部署待探究**
 ~~~
-# git
-# 远程仓库多了一个 gh_pages 分支并且分支里有 index.html文件，说明部署的代码上传成功
+// git
+// 远程仓库多了一个 gh_pages 分支并且分支里有 index.html文件，说明部署的代码上传成功
 git subtree push --prefix=_book origin gh_pages 
-git branch -a # 可以看到远程仓库多了个 gh_pages 分支
+git branch -a // 可以看到远程仓库多了个 gh_pages 分支
 ~~~
 
 - **`Settings`** -> **`Pages`** -> **`Branch` 设置并点击 `Save` 保存** -> *文档地址：`*https://ljmgame.github.io/noteBook/`**
@@ -210,6 +210,6 @@ git branch -a # 可以看到远程仓库多了个 gh_pages 分支
 - **`master` 提交源码正常流程、可以考虑忽略 `_book`文件**
 - **然后提交静态部署文件到 `gh_pages` 分支上**
 ```
-# git
-git subtree push --prefix=_book origin gh_pages # 更新静态部署
+// git
+git subtree push --prefix=_book origin gh_pages // 更新静态部署
 ```

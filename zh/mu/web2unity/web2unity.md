@@ -1,5 +1,5 @@
 # web与unity服务器通信
-  - [1. 需求](#1-需求)
+  <!-- - [1. 需求](#1-需求)
   - [2. 功能](#2-功能)
   - [3. mu-network 导出脚本](#3-mu-network-导出脚本)
   - [4. mu-client 布置环境](#4-mu-client-布置环境)
@@ -7,7 +7,7 @@
       - [4.1.1. 本地拷贝](#411-本地拷贝)
       - [4.1.2. 远程下载](#412-远程下载)
     - [4.2. 修改代码](#42-修改代码)
-    - [4.3. 运行脚本](#43-运行脚本)
+    - [4.3. 运行脚本](#43-运行脚本) -->
 
 ## 1. 需求
 - 实现 `H5客户端` 连接登录 `unity服务器`
@@ -28,16 +28,16 @@
 - 输出脚本文件
 
 ~~~
-# 下载环境依赖
+// 下载环境依赖
 npm install --registry=https://registry.npm.taobao.org
 
-# 生成 Msg.ts 文件
+// 生成 Msg.ts 文件
 npm run msg
 
-# 生成 netmsg.js 文件
+// 生成 netmsg.js 文件
 npm run proto
 
-# 生成 dist/network.js 文件
+// 生成 dist/network.js 文件
 npm run build
 ~~~
 
@@ -67,16 +67,16 @@ npm run build
 - 切镜像源
 
 ~~~
-# nrm 是 npm 的镜像源管理工具，全局安装 nrm
+// nrm 是 npm 的镜像源管理工具，全局安装 nrm
 npm install -g nrm
 
-# 增加源 源名+源路径
+// 增加源 源名+源路径
 nrm add mu http://192.168.10.57:4873/
 
-# 切换源
+// 切换源
 nrm use mu
 
-# 下载或更新最新版本 @mu
+// 下载或更新最新版本 @mu
 npm install
 ~~~
 
@@ -87,22 +87,22 @@ npm install
 - 修改 `tools/server.js` 文件
 
 ~~~
-# unity ip, unity port, web port, log
-# 其中 web port 为自定义，因为 中转脚本 在本地运行
+// unity ip, unity port, web port, log
+// 其中 web port 为自定义，因为 中转脚本 在本地运行
 const server = new net.Web2UnityServer("192.168.11.54", 9200, 9700, false);
 ~~~
 
 - 修改 `MsgControl.ts` 文件 `sendLoginWeb2Unity`函数
 
 ~~~
-# ip 地址指向本机，端口与 server.js 文件的 web端口 一致即可
+// ip 地址指向本机，端口与 server.js 文件的 web端口 一致即可
 Mu.network.connect('127.0.0.1', 9700, false);
 ~~~
 
 - 修改 `ConnectServerView.ts` 文件
 
 ~~~
-# 开启 web2Unity 按钮
+// 开启 web2Unity 按钮
 this.view.getChild("btn_webToUnity").visible = true;
 ~~~
 

@@ -2,6 +2,7 @@
     "plugins": [
         "splitter",
         "anchor-navigation-ex",
+        "page-treeview-simple",
         "expandable-chapters-small@git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
     ],
     "pluginsConfig": {
