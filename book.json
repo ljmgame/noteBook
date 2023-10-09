@@ -1,6 +1,12 @@
 {
     "plugins": [
         "splitter",
+        "anchor-navigation-ex",
         "expandable-chapters-small@git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
-    ]
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": false
+        }
+    }
 }

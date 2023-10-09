@@ -6,6 +6,7 @@
     - [1.4. 失败案例](#14-失败案例)
   - [2. 常用插件](#2-常用插件)
     - [2.1. 侧边栏目录导航](#21-侧边栏目录导航)
+    - [2.2. 页内目录](#22-页内目录)
 
 ## 1. 安装
 
@@ -65,13 +66,13 @@ gitbook serve # 重启服务
 ### 2.1. 侧边栏目录导航
 - **gitbook 默认左侧为目录索引导航、且默认目录是全部展开的**
 
-### 2.1.1. chapter-fold
+#### 2.1.1. chapter-fold
 - **略**
 
-### 2.1.2. expandable-chapters
+#### 2.1.2. expandable-chapters
 - **略**
 
-### 2.1.3. expandable-chapters-small
+#### 2.1.3. expandable-chapters-small
 - **可使目录默认折叠且展开后不会自动折叠，箭头相比 expandable-chapters 会细一些**
 ~~~
 {
@@ -84,7 +85,7 @@ gitbook serve # 重启服务
 # bug优化：laya文档也使用该插件且没有bug、对比了下代码有优化。后面该插件迁移自己的地址参照优化后再重定向新地址重新拉取
 ~~~
 
-### 2.1.4. splitter
+#### 2.1.4. splitter
 - **侧边栏宽度调节**
 ~~~
 {
@@ -93,3 +94,26 @@ gitbook serve # 重启服务
     ]
 }
 ~~~
+
+### 2.2. 页内目录
+
+#### 2.2.1 anchor-navigation-ex
+- 支持 **悬浮目录** 和 **回到顶部**
+- **悬浮目录：页面右上角生成条纹按钮、鼠标移入展开悬浮目录**
+- **回到顶部：页面右下角生成箭头按钮、点击回到页面顶部**
+- 此插件只会提取 h[1-3] 标签作为 悬浮导航
+- [更多配置介绍](https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex/blob/master/doc/config.md)
+~~~
+{
+    "plugins": [
+        "anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": false  // 标题是否显示层级序号、true则页面标题和悬浮导航中标题都会加上层级序号。若编辑中自行添加则设置false
+            "showGoTop": false  // 是否显示返回顶部按钮
+        }
+    }
+}
+~~~
+- ![图解](./img/2.png)

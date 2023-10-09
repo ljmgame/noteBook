@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
     "gitbook-plugin-expandable-chapters-small": "git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git",
     "gitbook-plugin-splitter": "0.0.8"
   },
