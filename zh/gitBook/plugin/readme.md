@@ -61,18 +61,28 @@ gitbook serve // 重启服务
 // 重新执行 npm install gitbook-plugin-splitter 成功
 ~~~
 
-## 2. 常用插件
+## 2. 默认插件
+- **GitBook 默认自带7个插件（功能性5个、搜索2个、主题1个）**
+> **lunr**：搜索插件后台服务  
+> **search**：搜索插件（不支持中文）  
+> **highlight**：语法高亮插件    
+> **sharing**：分享插件（右上角分享功能）  
+> **fontsettings**：字体设置插件（最上方“A”符号）  
+> **livereload**：热加载插件（为GitBook实时重新加载）  
+> **theme-default**：主题
 
-### 2.1. 侧边栏目录导航
+## 3. 常用插件
+
+### 3.1. 侧边栏目录导航
 - **gitbook 默认左侧为目录索引导航、且默认目录是全部展开的**
 
-#### 2.1.1. chapter-fold
+#### 3.1.1. chapter-fold
 - **略**
 
-#### 2.1.2. expandable-chapters
+#### 3.1.2. expandable-chapters
 - **略**
 
-#### 2.1.3. expandable-chapters-small
+#### 3.1.3. expandable-chapters-small
 - **可使目录默认折叠且展开后不会自动折叠，箭头相比 expandable-chapters 会细一些**
 ~~~
 {
@@ -85,7 +95,7 @@ gitbook serve // 重启服务
 // bug优化：laya文档也使用该插件且没有bug、对比了下代码有优化。后面该插件迁移自己的地址参照优化后再重定向新地址重新拉取
 ~~~
 
-#### 2.1.4. splitter
+#### 3.1.4. splitter
 - **侧边栏宽度调节**
 ~~~
 {
@@ -95,9 +105,9 @@ gitbook serve // 重启服务
 }
 ~~~
 
-### 2.2. 页内目录
+### 3.2. 页内目录
 
-#### 2.2.1. page-treeview-simple
+#### 3.2.1. page-treeview-simple
 - 支持 **生成页内目录**
 - 能支持到6级目录
 - 在 page-treeview 功能基础上修改以下两点
@@ -120,7 +130,7 @@ gitbook serve // 重启服务
 // 和 page-treeview 一样强制支持到6级目录、不能手动配置支持级数。体验真差
 ~~~
 
-#### 2.2.2. anchor-navigation-ex
+#### 3.2.2. anchor-navigation-ex
 - 支持 **悬浮目录** 和 **回到顶部**
 - **悬浮目录：页面右上角生成条纹按钮、鼠标移入展开悬浮目录**
 - **回到顶部：页面右下角生成箭头按钮、点击回到页面顶部**
@@ -140,3 +150,34 @@ gitbook serve // 重启服务
 }
 ~~~
 - ![图解](./img/2.png)
+
+### 3.3. 高级搜索
+
+#### 3.3.1. search-pro
+- 支持 **中文搜索**
+- 使用此插件前需要将默认的 **search** 和 **lunr** 插件去掉
+~~~
+{
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-pro"
+    ]
+}
+~~~
+
+### 4. 查看图片
+
+#### 4.1 popup
+- **单击图片，在新页面查看大图**
+~~~
+{
+    "plugins": [
+        "popup"
+    ]
+}
+~~~
+
+## 4. 参考地址
+[插件的配置和使用详解](https://blog.csdn.net/ming_97y/article/details/115202048)  
+[插件整理 - book.json配置](http://www.noobyard.com/article/p-zhwulqad-hw.html)

@@ -1,8 +1,20 @@
 {
+    "title": "笔记",
+    "author": "ljmyx",
+    "desctiption": "技术文档",
+    "language": "zh-hans",
+    "styles": {
+        "website": "styles/website.css"
+    },
     "plugins": [
+        "-lunr",
+        "-search",
+        "-sharing",
+        "search-pro",
         "splitter",
         "anchor-navigation-ex",
         "page-treeview-simple",
+        "popup",
         "expandable-chapters-small@git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
     ],
     "pluginsConfig": {

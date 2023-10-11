@@ -7,11 +7,12 @@
 
 - [gitBook](gitBook/readme.md)
   - [文档创建部署](gitBook/init/readme.md)
+  - [配置](gitBook/config/readme.md)
   - [插件](gitBook/plugin/readme.md)
 
-- [unity](unity/index.md)
-  - [lua编程](unity/lua/lua.md)
-  - [资源导出](unity/resExport/resExport.md)
+- [unity](unity/readme.md)
+  - [lua编程](unity/lua/readme.md)
+  - [资源导出](unity/resExport/readme.md)
 
-- [mu](mu/index.md)
-  - [web与unity服务器通信](mu/web2unity/web2unity.md)
+- [mu](mu/readme.md)
+  - [web与unity服务器通信](mu/web2unity/readme.md)

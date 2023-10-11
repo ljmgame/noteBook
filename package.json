@@ -7,6 +7,8 @@
     "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
     "gitbook-plugin-expandable-chapters-small": "git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git",
     "gitbook-plugin-page-treeview-simple": "^4.0.2",
+    "gitbook-plugin-popup": "0.0.1",
+    "gitbook-plugin-search-pro": "^2.0.2",
     "gitbook-plugin-splitter": "0.0.8"
   },
   "devDependencies": {},

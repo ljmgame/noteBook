@@ -16,14 +16,14 @@
 - vscode
 - lua插件：[sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
     - vscode 插件安装 搜索 `lua` 作者为 `sumneko`
-    - ![图解](../img/lua/1.png)
+    - ![图解](./img/1.png)
 - 参考链接
   - [VSCode Lua 编辑环境与常用操作](https://zhuanlan.zhihu.com/p/399194751)
 
 ### 1.2 注意
 
 - 缓存文件占用内存大 vscode 从 assets 文件夹打开就好。容易崩溃
-  - ![图解](../img/lua/2.png)
+  - ![图解](./img/2.png)
 
 ### 1.3 功能
 
@@ -52,34 +52,34 @@
 ### 2.1 vscode配置
 
 - 安装插件：`EmmyLua`
-    - ![图解](../img/lua/3.png)
+    - ![图解](./img/3.png)
 
 - 添加配置：`运行` -> `添加配置` -> 选择 `EmmyLua Attach Debug`
-    - ![图解](../img/lua/4.png)
+    - ![图解](./img/4.png)
 
 - 根目录 `.vscode` 下会自动生成 `launch.json` 文件
-    - ![图解](../img/lua/5.png)
+    - ![图解](./img/5.png)
 
 - `奇迹H5` 项目修改 `launch.json` 文件
-    - ![图解](../img/lua/6.png)
+    - ![图解](./img/6.png)
 
 ### 2.2 unity配置
 
 - 设置平台为 `Android`：`File` -> `Build Settings` -> `Platform` 选择 `Android` -> 点击 `Build` (会编译挺长时间，耐心等待)
-    - ![图解](../img/lua/7.png)
-    - ![图解](../img/lua/8.png)
+    - ![图解](./img/7.png)
+    - ![图解](./img/8.png)
 
 ### 2.3 运行调试
 
 - `vscode F5` 跳出 `Select the process to attach`
-    - ![图解](../img/lua/9.png)
+    - ![图解](./img/9.png)
 
 - `vscode F5` 如果没跳出框而是提示 `No process for attach` 可能插件的文件被360杀毒删除了，需要去 `360杀毒` 还原
-    - ![图解](../img/lua/10.png)
-    - ![图解](../img/lua/11.png)
+    - ![图解](./img/10.png)
+    - ![图解](./img/11.png)
 
 - `Select the process to attach` 选择要调试的 `Unity` 进程，并通过 `360` 报警。此时 `vscode` 调试状态中
-    - ![图解](../img/lua/12.png)
+    - ![图解](./img/12.png)
 
 - 运行 `Unity` 工程、vscode 工程断点开始调试
 
