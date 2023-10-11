@@ -90,9 +90,15 @@ gitbook serve // 重启服务
         "expandable-chapters-small@git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
     ]
 }
-// 地址重定向：默认地址下载不到、这里重定向到国内地址
+// 地址重定向：如果有下载不到的地址、可以重定向到国内地址。下载不到有可能因为用了代理服务器原因。
 // bug：该重定向地址的插件有问题、只能同时展开一个子目录。
-// bug优化：laya文档也使用该插件且没有bug、对比了下代码有优化。后面该插件迁移自己的地址参照优化后再重定向新地址重新拉取
+{
+    "plugins": [
+        "expandable-chapters-small"
+    ]
+}
+// 去掉 vpn 或者 代理服务器 的影响。可以下载到该插件。
+// 该插件可以同时展开多个子目录。与 Laya文档 表现一致
 ~~~
 
 #### 3.1.4. splitter
@@ -180,4 +186,5 @@ gitbook serve // 重启服务
 
 ## 4. 参考地址
 [插件的配置和使用详解](https://blog.csdn.net/ming_97y/article/details/115202048)  
-[插件整理 - book.json配置](http://www.noobyard.com/article/p-zhwulqad-hw.html)
+[GitBook插件整理](https://www.jianshu.com/p/427b8bb066e6)  
+[插件](https://www.mapull.com/gitbook/comscore/custom/plugin/)

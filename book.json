@@ -15,7 +15,8 @@
         "anchor-navigation-ex",
         "page-treeview-simple",
         "popup",
-        "expandable-chapters-small@git+https://gitee.com/mirrors_cocos-creator/gitbook-plugin-expandable-chapters-small.git"
+        "code",
+        "expandable-chapters-small"
     ],
     "pluginsConfig": {
         "anchor-navigation-ex": {
